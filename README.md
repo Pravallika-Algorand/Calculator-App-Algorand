@@ -12,12 +12,6 @@ This project uses AlgoKit's workspace structure. By default:
 
 ---
 
-# Calculator App - Built Using Algorand AlgoKit SDK  
-
-This application performs basic calculator operations: **Addition**, **Subtraction**, **Multiplication**, and **Division**.
-
----
-
 ## Steps to Create and Deploy the Calculator App  
 
 ### 1. Initialize the Project  
