@@ -1,22 +1,110 @@
-# calculator
+# Calculator App - Built Using Algorand AlgoKit SDK
 
-Welcome to your new AlgoKit project!
+This application performs basic calculator operations: **Addition**, **Subtraction**, **Multiplication**, and **Division**.
 
-This is your workspace root. A `workspace` in AlgoKit is an orchestrated collection of standalone projects (backends, smart contracts, frontend apps and etc).
+---
 
-By default, `projects_root_path` parameter is set to `projects`. Which instructs AlgoKit CLI to create a new directory under `projects` directory when new project is instantiated via `algokit init` at the root of the workspace.
+## Project Structure
+
+This project uses AlgoKit's workspace structure. By default:
+- Projects are stored in the `projects` directory.
+- You can create new projects using the `algokit init` command.
+
+---
+
+# Calculator App - Built Using Algorand AlgoKit SDK  
+
+This application performs basic calculator operations: **Addition**, **Subtraction**, **Multiplication**, and **Division**.
+
+---
+
+## Steps to Create and Deploy the Calculator App  
+
+### 1. Initialize the Project  
+1. Open your terminal or command prompt.  
+2. Navigate to your desired directory.  
+3. Run the following command to initialize an AlgoKit project:  
+   ```bash
+   algokit init
+4. During initialization, provide the following details when prompted:
+    *Project type*: Smart Contract
+    *Language*: Python
+    *Project name*: hello
+    *Name of project type*: hello-world (default)
+    *Template*: starter
+    *Bootstrap Git Repo*: Yes (installs dependencies)
+
+### 2. Install Dependencies (if needed)
+- If dependencies are missing or not properly installed, use this command:
+   ```bash
+   algokit bootstrap all
+
+### 3. Navigate to the Project Directory
+- The project structure will look like this:
+  ```bash
+  Calculator-App-Algorand/
+  └── projects/
+      └── calculator/
+          ├── smart_contracts/
+          │   └── calculator/
+          │       ├── contract.py       # Smart contract logic
+          │       └── deploy_config.py  # Deployment configuration
+
+### 4. Build and Initialize the Project
+- Run the following command to build and initialize the project:
+  ```bash
+  algokit project run build
+### 5. Start Docker Engine
+- Ensure Docker is installed and running on your system to use the local Algorand network.
+
+### 6. Reset the Local Network (Optional)
+- If needed, reset the local network using:
+
+  ```bash
+  algokit localnet reset
+  
+### 7. Deploy the Smart Contract
+- Deploy and execute the smart contract in the local network using:
+
+  ```bash
+  algokit project localnet deploy
+  
+- Once deployed, the smart contract will execute, and the results of the calculator operations will be displayed.
+
+## Summary of Commands
+
+### 1. Initialize Project:
+    ```bash
+    algokit init
+
+### 2. Install Dependencies (if needed):
+    ```bash
+    algokit bootstrap all
+    
+### 3. Build Project:
+     ```bash
+    algokit project run build
+
+### 4. Reset Local Network (Optional):
+     ```bash
+    algokit localnet reset
+
+### 5. Deploy and Run Smart Contract:
+     ```bash
+    algokit project localnet deploy
+
 
 ## Getting Started
 
-To get started refer to `README.md` files in respective sub-projects in the `projects` directory.
+1. Refer to the `README.md` files in the `projects` directory for more details about specific sub-projects.  
+2. To learn more about AlgoKit, visit the [AlgoKit Documentation](https://github.com/algorandfoundation/algokit-cli/blob/main/docs/algokit.md).
 
-To learn more about algokit, visit [documentation](https://github.com/algorandfoundation/algokit-cli/blob/main/docs/algokit.md).
+---
 
-### GitHub Codespaces
+## GitHub Codespaces (Optional)
 
-To get started execute:
+If you're using GitHub Codespaces:
+1. Run `algokit generate devcontainer` to configure the repository for Codespaces.  
+2. Inside a Codespace, run `algokit init` to create a new AlgoKit project.
 
-1. `algokit generate devcontainer` - invoking this command from the root of this repository will create a `devcontainer.json` file with all the configuration needed to run this project in a GitHub codespace. [Run the repository inside a codespace](https://docs.github.com/en/codespaces/getting-started/quickstart) to get started.
-2. `algokit init` - invoke this command inside a github codespace to launch an interactive wizard to guide you through the process of creating a new AlgoKit project
-
-Powered by [Copier templates](https://copier.readthedocs.io/en/stable/).
+---
