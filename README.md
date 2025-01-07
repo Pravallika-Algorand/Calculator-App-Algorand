@@ -20,6 +20,7 @@ This project uses AlgoKit's workspace structure. By default:
 3. Run the following command to initialize an AlgoKit project:  
    ```bash
    algokit init
+   ```
 4. During initialization, provide the following details when prompted:
     *Project type*: Smart Contract
     *Language*: Python
@@ -32,6 +33,7 @@ This project uses AlgoKit's workspace structure. By default:
 - If dependencies are missing or not properly installed, use this command:
    ```bash
    algokit bootstrap all
+   ```
 
 ### 3. Navigate to the Project Directory
 - The project structure will look like this:
@@ -43,11 +45,13 @@ This project uses AlgoKit's workspace structure. By default:
           │   └── calculator/
           │       ├── contract.py       # Smart contract logic
           │       └── deploy_config.py  # Deployment configuration
+  ```
 
 ### 4. Build and Initialize the Project
 - Run the following command to build and initialize the project:
   ```bash
   algokit project run build
+  ```
 ### 5. Start Docker Engine
 - Ensure Docker is installed and running on your system to use the local Algorand network.
 
@@ -56,12 +60,14 @@ This project uses AlgoKit's workspace structure. By default:
 
   ```bash
   algokit localnet reset
+  ```
   
 ### 7. Deploy the Smart Contract
 - Deploy and execute the smart contract in the local network using:
 
   ```bash
   algokit project localnet deploy
+  ```
   
 - Once deployed, the smart contract will execute, and the results of the calculator operations will be displayed.
 
@@ -70,22 +76,27 @@ This project uses AlgoKit's workspace structure. By default:
 ### 1. Initialize Project:
     ```bash
     algokit init
+    ```
 
 ### 2. Install Dependencies (if needed):
     ```bash
     algokit bootstrap all
+    ```
     
 ### 3. Build Project:
      ```bash
     algokit project run build
+    ```
 
 ### 4. Reset Local Network (Optional):
      ```bash
     algokit localnet reset
+    ```
 
 ### 5. Deploy and Run Smart Contract:
      ```bash
     algokit project localnet deploy
+    ```
 
 
 ## Getting Started
