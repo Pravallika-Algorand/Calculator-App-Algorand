@@ -22,12 +22,12 @@ This project uses AlgoKit's workspace structure. By default:
    algokit init
    ```
 4. During initialization, provide the following details when prompted:
-    *Project type*: Smart Contract
-    *Language*: Python
-    *Project name*: hello
-    *Name of project type*: hello-world (default)
-    *Template*: starter
-    *Bootstrap Git Repo*: Yes (installs dependencies)
+    - *Project type*: Smart Contract
+    - *Language*: Python
+    - *Project name*: hello
+    - *Name of project type*: hello-world (default)
+    - *Template*: starter
+    - *Bootstrap Git Repo*: Yes (installs dependencies)
 
 ### 2. Install Dependencies (if needed)
 - If dependencies are missing or not properly installed, use this command:
@@ -74,29 +74,29 @@ This project uses AlgoKit's workspace structure. By default:
 ## Summary of Commands
 
 ### 1. Initialize Project:
-    ```bash
-    algokit init
-    ```
+```bash
+algokit init
+```
 
 ### 2. Install Dependencies (if needed):
-    ```bash
-    algokit bootstrap all
-    ```
+```bash
+algokit bootstrap all
+```
     
 ### 3. Build Project:
-     ```bash
-    algokit project run build
-    ```
+ ```bash
+algokit project run build
+```
 
 ### 4. Reset Local Network (Optional):
-     ```bash
-    algokit localnet reset
-    ```
+```bash
+algokit localnet reset
+```
 
 ### 5. Deploy and Run Smart Contract:
-     ```bash
-    algokit project localnet deploy
-    ```
+```bash
+algokit project localnet deploy
+```
 
 
 ## Getting Started
